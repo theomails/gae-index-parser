@@ -59,7 +59,8 @@ public class Parser {
 		for(String index: strings) {
 			indexes.getIndexes().add( g.fromJson(index, DatastoreIndex.class) );
 		}
-		
+
+		indexes.setAutoGenerate("true"); //TODO: Hardcoded
 		return indexes;
 	}
 	
